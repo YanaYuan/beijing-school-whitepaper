@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向京籍家庭的北京小学与初中路径研究：候选学校、区级入学资格、2026招生计划、政策证据与家庭协作模板。">
+  <title>北京小学与初中择校白皮书 · 公开协作版</title>
+  <style>
+    :root { color-scheme: light; --ink:#203334; --muted:#596a6b; --paper:#fffefa; --canvas:#f2f3ee; --teal:#155c57; --line:#d8dfd8; --soft:#edf4ef; --amber:#795517; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.85 "Microsoft YaHei","PingFang SC",system-ui,sans-serif; }
+    a { color:var(--teal); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:hover { color:#093b37; }
+    a:focus-visible,button:focus-visible { outline:3px solid #d29b36; outline-offset:4px; }
+    .tools { position:sticky; top:0; z-index:10; display:flex; align-items:center; flex-wrap:wrap; gap:10px; padding:12px max(20px,calc((100vw - 1220px)/2)); background:#fffefaf5; border-bottom:1px solid var(--line); }
+    .tools strong { margin-right:auto; font-size:14px; }
+    button,.button { border:1px solid var(--teal); border-radius:7px; background:white; color:var(--teal); font:inherit; font-size:13px; padding:7px 13px; cursor:pointer; text-decoration:none; }
+    .primary { background:var(--teal); color:white; }
+    .status { width:100%; margin:0; font-size:12px; color:var(--muted); }
+    .layout { display:grid; grid-template-columns:205px minmax(0,940px); gap:32px; max-width:1220px; margin:35px auto 60px; padding:0 20px; }
+    aside { align-self:start; position:sticky; top:120px; font-size:13px; }
+    aside p { font-size:11px; letter-spacing:2px; color:var(--muted); }
+    aside ol { list-style:none; padding:0; margin:0; }
+    aside li { margin:11px 0; }
+    aside a { text-decoration:none; display:block; border-left:2px solid var(--line); padding-left:12px; }
+    aside a:hover { border-color:var(--teal); }
+    article { min-width:0; padding:58px 62px; background:var(--paper); border:1px solid var(--line); box-shadow:0 8px 35px #243a3110; }
+    .eyebrow { font-size:12px; letter-spacing:2px; font-weight:700; color:var(--teal); text-transform:uppercase; }
+    h1 { font-size:39px; letter-spacing:-1px; line-height:1.4; margin:20px 0 14px; }
+    h1 span { display:block; font-size:24px; font-weight:500; margin-top:12px; letter-spacing:0; }
+    h2 { font-size:25px; line-height:1.5; margin:0 0 22px; padding-top:8px; }
+    h2 small { display:block; font-size:11px; letter-spacing:2px; color:var(--teal); margin-bottom:7px; }
+    h3 { font-size:19px; line-height:1.55; margin:30px 0 12px; }
+    h4 { font-size:16px; margin:22px 0 9px; }
+    p { margin:12px 0; }
+    ul,ol { padding-left:24px; }
+    li { margin:7px 0; }
+    .subtitle { color:var(--muted); font-size:16px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin:24px 0 30px; }
+    .meta span,.tag { display:inline-block; font-size:11px; line-height:1.6; padding:4px 9px; border-radius:4px; background:var(--soft); color:var(--teal); font-weight:600; }
+    .tag.caution { background:#f8efd9; color:var(--amber); }
+    .lead { font-size:21px; line-height:1.75; padding:23px 26px; background:var(--soft); border-left:4px solid var(--teal); margin:28px 0; }
+    .notice { padding:16px 20px; border:1px solid #e1d3b6; background:#fffbf1; font-size:14px; border-radius:5px; }
+    .note { padding:15px 20px; background:#f3f5f0; border-left:3px solid #a4b8ab; font-size:14px; }
+    .muted,.source { color:var(--muted); font-size:13px; }
+    section { border-top:1px solid var(--line); margin-top:42px; padding-top:30px; }
+    .table-wrap { overflow-x:auto; margin:17px 0; }
+    table { width:100%; border-collapse:collapse; font-size:13px; line-height:1.7; }
+    th { background:var(--soft); color:#244d45; text-align:left; font-weight:700; }
+    th,td { padding:12px 13px; border:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; }
+    tbody tr:nth-child(even) td { background:#fafbf7; }
+    .number { font-variant-numeric:tabular-nums; white-space:nowrap; text-align:center; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:24px 0; }
+    .step { border:1px solid var(--line); padding:15px; border-radius:6px; font-size:13px; }
+    .step b { display:block; color:var(--teal); font-size:20px; }
+    .step strong { display:block; margin:5px 0; }
+    .sources { padding-left:0; list-style:none; font-size:13px; }
+    .sources li { margin:20px 0; padding-bottom:15px; border-bottom:1px dashed var(--line); }
+    .sources strong { display:block; }
+    .sources .date { display:block; color:var(--muted); font-size:12px; }
+    footer { margin-top:38px; padding-top:20px; border-top:2px solid var(--teal); font-size:12px; color:var(--muted); }
+    .placeholder { color:#60746c; }
+    .checklist { list-style:none; padding-left:0; }
+    .checklist li::before { content:"□"; margin-right:10px; color:var(--teal); }
+    @media (max-width:1050px) {
+      .layout { display:block; max-width:900px; }
+      aside { position:static; margin-bottom:24px; }
+      aside ol { display:flex; flex-wrap:wrap; gap:8px 18px; }
+      aside li { margin:0; }
+      article { padding:40px; }
+    }
+    @media (max-width:600px) {
+      body { font-size:15px; }
+      .tools { position:static; padding:12px 16px; }
+      .tools strong { width:100%; }
+      .layout { margin:20px auto; padding:0 10px; }
+      article { padding:28px 20px; }
+      h1 { font-size:29px; }
+      h1 span { font-size:20px; }
+      h2 { font-size:23px; }
+      .lead { padding:18px; font-size:18px; }
+      .steps { grid-template-columns:1fr 1fr; }
+      th,td { padding:9px; min-width:100px; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @page { size:A4; margin:17mm 16mm; }
+    @media print {
+      body { background:white; font-size:10.5pt; color:#111; line-height:1.7; }
+      .tools,aside,.no-print { display:none !important; }
+      .layout { display:block; margin:0; padding:0; max-width:none; }
+      article { padding:0; border:0; box-shadow:none; background:white; }
+      h1 { font-size:28pt; }
+      h1 span { font-size:17pt; }
+      h2 { font-size:19pt; break-after:avoid; }
+      h3,h4 { break-after:avoid; }
+      section { margin-top:23pt; padding-top:18pt; }
+      p,li { orphans:3; widows:3; }
+      .lead { font-size:15pt; }
+      .notice,.note,.step,tr { break-inside:avoid; }
+      table { font-size:9pt; }
+      thead { display:table-header-group; }
+      th,td { padding:7pt; min-width:0; }
+      .table-wrap { overflow:visible; }
+      a { color:#174d43; }
+      .sources a::after { content:" [" attr(href) "]"; font-size:8pt; overflow-wrap:anywhere; }
+      * { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="tools" aria-label="文档工具">
+    <strong>北京择校研究 · GitHub 公开协作版</strong>
+    <button type="button" id="print-report">打印 / 保存 PDF</button>
+    <a class="button" href="./index.html" download="beijing-school-whitepaper.html">下载 HTML</a>
+    <a class="button" href="https://github.com/YanaYuan/beijing-school-whitepaper/issues/new/choose" target="_blank" rel="noopener noreferrer">讨论 / 补充证据</a>
+    <a class="button primary" href="https://github.com/YanaYuan/beijing-school-whitepaper/edit/main/index.html" target="_blank" rel="noopener noreferrer">参与修改（GitHub）</a>
+    <p class="status">公开阅读 · Issue 讨论 · Pull Request 修改 · 合并后更新网页。所有公开提交均可被他人查看，请勿填写家庭隐私。</p>
+  </div>
+  <div class="layout">
+    <aside aria-label="白皮书目录">
+      <p>CONTENTS / 目录</p>
+      <ol>
+        <li><a href="#summary">01 执行摘要</a></li>
+        <li><a href="#method">02 范围与证据标准</a></li>
+        <li><a href="#schools">03 初中候选与招生计划</a></li>
+        <li><a href="#eligibility">04 四区入学资格</a></li>
+        <li><a href="#pathways">05 从初中倒推小学</a></li>
+        <li><a href="#risks">06 风险与中招衔接</a></li>
+        <li><a href="#roadmap">07 行动路线图</a></li>
+        <li><a href="#workspace">08 公开协作与决策模板</a></li>
+        <li><a href="#references">09 来源与版本记录</a></li>
+      </ol>
+    </aside>
+    <article id="report" aria-labelledby="title">
+      <header>
+        <div class="eyebrow">Research white paper · Beijing · 2026</div>
+        <h1 id="title">北京小学与初中<br>择校白皮书<span>京籍家庭的入学路径、学校初筛与共同决策</span></h1>
+        <p class="subtitle">不从“买哪套学区房”开始，而从“孩子具备什么资格、实际可能进入哪些学校”开始。</p>
+        <div class="meta">
+          <span>版本 v1.0 · 公开研究协作稿</span>
+          <span>核验日期 2026-10-25</span>
+          <span>政策基准 2026 年</span>
+          <span>重点区域 海淀 / 西城 / 东城 / 朝阳</span>
+        </div>
+        <div class="notice">
+          <strong>使用边界：</strong>本白皮书整理公开政策、招生计划与有限社交平台样本，不是官方入学承诺、学校质量认证或购房建议。尚未检索到 2027 年完整入学政策。家庭户籍、房产、年级、预算等情况均未预设；涉及买房、迁户、转学或回区申请，应以目标入学年度的正式文件及区考试中心审核为准。
+        </div>
+      </header>
+
+      <section id="summary">
+        <h2><small>01 / EXECUTIVE SUMMARY</small>执行摘要</h2>
+        <div class="lead"><strong>北京户口 ≠ 某区入学资格 ≠ 某所学校录取资格。</strong><br>取得报名资格，只是第一步；派位结果、直升条件和实际就读校区，是不同的问题。</div>
+        <ol>
+          <li><strong>先核资格，再谈名校。</strong>海淀、西城、东城、朝阳的回区规则不同，不能将一个区的户籍或房产条件照搬到另一个区。</li>
+          <li><strong>优先比较一组可进入的初中。</strong>应将热门目标校、其他可接受学校与最不理想的可能去向一起评估，而不是只看学区内最有名的一所。</li>
+          <li><strong>公开派位是实际存在的合法通道。</strong>2026 年人大附中、十一学校、三帆等有面向所在区的公开招生计划；“全区”不是“全北京”，也不意味着保证录取。</li>
+          <li><strong>小学与初中的衔接值得单独研究。</strong>九年一贯直升、按比例直升、定向名额派位、多校划片不能混称“对口”。</li>
+          <li><strong>校区与实际办学地址不可省略。</strong>借址办学、集团分校、新校区与本校可能有不同的师资安排、通勤条件和毕业届数据。</li>
+          <li><strong>协作应有唯一编辑源。</strong>GitHub 仓库中的 HTML 是主稿，GitHub Pages 展示已合并版本。参与者通过 Issue 讨论、Pull Request 提议修改；公开研究与私人的家庭决策记录分开保存。</li>
+        </ol>
+        <div class="steps">
+          <div class="step"><b>01</b><strong>确认资格</strong>学籍、户籍、房产与实际居住</div>
+          <div class="step"><b>02</b><strong>识别路径</strong>直升、登记、派位、回区审核</div>
+          <div class="step"><b>03</b><strong>比较组合</strong>学校、校区、通勤与可接受去向</div>
+          <div class="step"><b>04</b><strong>再作决策</strong>是否迁户、买房、转学或维持现状</div>
+        </div>
+      </section>
+
+      <section id="method">
+        <h2><small>02 / SCOPE &amp; EVIDENCE</small>研究范围与证据标准</h2>
+        <h3>2.1 本轮覆盖与未覆盖事项</h3>
+        <p>本轮研究以京籍家庭的小升初资格和小学—初中衔接为主，优先比较海淀、西城、东城、朝阳；不是全市所有行政区、所有初中的穷尽评估。尚未开展逐校探访、普通班教学观察、通勤实测、家庭个案资格审查或可比口径的毕业生数据审计。</p>
+        <p>初中候选名单属于进一步考察的起点，不是精确实力排名。高中高考成绩不能替代初中培养质量；集团声誉也不能直接等同于每个分校或校区的效果。</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">证据层级</th><th scope="col">用途</th><th scope="col">本文的处理方式</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag">A · 官方原文</span></td><td>入学条件、流程、招生人数、学位记录</td><td>以教委、政府门户、考试中心的对应年度文件为准；保留来源链接。</td></tr>
+              <tr><td><span class="tag">B · 权威媒体</span></td><td>政策安排及改革项目的报道</td><td>注明为媒体报道，不把它包装成区考试中心的个案审核结论。</td></tr>
+              <tr><td><span class="tag caution">C · 社交平台样本</span></td><td>识别家长关心的问题、可能的误区</td><td>仅作线索，不用少数笔记推算排名、中签率、普通班成绩或招生“暗门”。</td></tr>
+              <tr><td><span class="tag caution">D · 分析与建议</span></td><td>家庭决策顺序、评价框架、待办事项</td><td>与政策事实区分；属于本白皮书建议，欢迎参与者讨论修订。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>2.2 小红书样本带来的提醒</h3>
+        <p>本轮在已授权浏览器中查看了北京初中梯队、海淀小升初、朝阳择校相关笔记及部分评论。样本中出现将高中“一本率”用于描述初中梯队、对分校关系和新校是否已有毕业届提出争议等情况。</p>
+        <p><strong>因此，没有采用这些帖子的成绩排名、升学率、录取概率或“保进”说法。</strong>相关观察不是对全部小红书内容的统计判断，也不构成对具体学校的负面结论。后续如引用家长经验，应记录年份、具体校区、孩子所在年级以及是否为亲历信息。</p>
+        <p class="source">检索入口：<a href="https://www.xiaohongshu.com/search_result?keyword=北京%20初中%20择校">小红书“北京 初中 择校”搜索</a>（结果动态变化，可能需要登录；不作为入学资格依据）。</p>
+      </section>
+
+      <section id="schools">
+        <h2><small>03 / SCHOOL SHORTLIST</small>初中候选与已核实招生计划</h2>
+        <h3>3.1 第一轮候选清单</h3>
+        <p><span class="tag caution">分析性初筛，非官方排名</span> 下列学校值得进一步核验。名单的作用是缩小研究范围，而不是判断任一孩子进入后必然获得更好的升学结果。</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">区域</th><th scope="col">优先考察对象</th><th scope="col">重点核验问题</th></tr></thead>
+            <tbody>
+              <tr><td>海淀</td><td>人大附中、十一学校、北京一〇一中学、清华附中、北大附中、首师大附中</td><td>区内资格和报名区域；本校与分校区别；普通班支持；借址办学；实际通勤。</td></tr>
+              <tr><td>西城</td><td>三帆中学、北师大附属实验中学分校、十三中分校、北京四中初中、北京八中初中</td><td>全区派位和学区派位的区别；完整学区名单；分校区招生代码；实际就读地点。</td></tr>
+              <tr><td>东城</td><td>二中分校、五中分校、171 中学、文汇中学；进一步比较东直门中学、汇文中学</td><td>对应小学的直升与定向名额；适用届别；不同校区；一体化培养安排。</td></tr>
+              <tr><td>朝阳</td><td>人大附中朝阳学校、八十中学初中、陈经纶中学本部及嘉铭、帝景等具体校区</td><td>精确学校全称与性质；当年全区派位是否有计划；对口与划片范围；毕业届数据。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note"><strong>名称核对：</strong>十一学校与北京市第十一中学不是同一所学校；“文汇”与“汇文”不同；人大附中朝阳学校不能与其他名称相近学校混称；“陈经纶”集团名称不足以确定具体学校、校区和入学路径。</div>
+        <h3>3.2 海淀：2026 年公办初中登记入学派位</h3>
+        <p><span class="tag">A · 官方招生计划</span> 以下各行在公布计划中的招生区域均为海淀“全区”。先具备海淀初中入学资格，再按当年平台和计划填报。</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">学校</th><th scope="col">该途径计划人数</th><th scope="col">已核实的地址或特别提示</th></tr></thead>
+            <tbody>
+              <tr><td>北京市十一学校</td><td class="number">150</td><td>玉泉路 66 号。</td></tr>
+              <tr><td>北京市第一〇一中学</td><td class="number">140</td><td>颐和园路 11 号；其他校区另列计划。</td></tr>
+              <tr><td>北京大学附属中学</td><td class="number">100</td><td>计划注明初一年级全部借址北大附小肖家河分校上课，地址肖家河王庄 1 号。</td></tr>
+              <tr><td>中国人民大学附属中学</td><td class="number">80</td><td>中关村大街 37 号；人大附中分校等另列计划。</td></tr>
+              <tr><td>清华大学附属中学</td><td class="number">80</td><td>中关村北大街清华大学北侧；与名称相近学校分别核对。</td></tr>
+              <tr><td>首都师范大学附属中学</td><td class="number">20</td><td>北洼路 33 号。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source">依据：<a href="#s3">[S3] 海淀区 2026 年公办初中登记入学派位计划表</a>。数字为本途径计划，既不是学校总招生数，也不是面向全北京市的名额。</p>
+        <h3>3.3 西城：2026 年全区派位</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">学校 / 校区</th><th scope="col">全区派位计划人数</th><th scope="col">特别提示</th></tr></thead>
+            <tbody>
+              <tr><td>北京市三帆中学</td><td class="number">200</td><td>裕中校区另列计划，不能合并当作同一志愿。</td></tr>
+              <tr><td>北京师范大学附属实验中学分校</td><td class="number">200</td><td>计划注明在东校区（西单北大街 129 号）就读；广外校区另列计划。</td></tr>
+              <tr><td>北京市第十三中学分校（什刹海校区）</td><td class="number">420</td><td>初一在德胜校区就读；后续初二、初三在德胜与什刹海校区间动态调整。</td></tr>
+              <tr><td>北京市第十三中学分校（诚毅校区）</td><td class="number">160</td><td>与什刹海校区分别列项。</td></tr>
+              <tr><td>北京市第四中学</td><td class="number">80</td><td>广外、道元校区另列计划。</td></tr>
+              <tr><td>北京市第八中学</td><td class="number">80</td><td>四存校区另列计划。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source">依据：<a href="#s6">[S6] 西城区 2026 年初中入学全区派位、学区登记计划</a>。本表为节选，不是完整学校名单。</p>
+        <h3>3.4 数据能说明什么，不能说明什么？</h3>
+        <ul>
+          <li><strong>能说明：</strong>这些学校在 2026 年有相应的公开申请与派位通道，并非只能依赖传闻中的选拔方式。</li>
+          <li><strong>不能说明：</strong>缺少报名人数、志愿顺序分布等信息，不能用计划人数推算中签率。</li>
+          <li><strong>不能外推：</strong>2026 名额不是 2027 或更远年份的承诺；本校数据不能代表所有集团成员。</li>
+          <li><strong>朝阳需补充核验：</strong>本轮不在这里给出未直接核对官方原表的逐校名额；不能默认候选学校的每个校区都有全区派位机会。</li>
+        </ul>
+      </section>
+
+      <section id="eligibility">
+        <h2><small>04 / ELIGIBILITY</small>四区入学资格：学籍、户籍与房产</h2>
+        <p>下述是京籍家庭的常见路径摘要，不覆盖全部特殊身份、集体户籍、家庭结构和历史政策例外。资格最终由相关部门审核。</p>
+        <h3>4.1 海淀</h3>
+        <ul>
+          <li><strong>本区学籍：</strong>具有海淀区小学学籍的京籍毕业生，按规定参加海淀小升初。</li>
+          <li><strong>学籍不在本区：</strong>全家户籍在海淀，或法定监护人在海淀有本人的合法住宅类房产并实际居住的京籍小学毕业生，可按规定申请回区并接受审核。</li>
+          <li><strong>不能混淆：</strong>孩子一人的海淀户口不自动等于“全家户籍”。户籍地址、监护人在京房产地址和实际居住不一致的特定情形，可能在区内协调解决，不能理解为锁定某学区。</li>
+          <li><strong>区内后续方式：</strong>九年一贯直升、按比例对口直升、公办初中登记、公办寄宿、民办和派位等，分别适用各自条件和范围。</li>
+        </ul>
+        <p class="source">依据：<a href="#s2">[S2] 海淀入学实施意见</a>、<a href="#s4">[S4] 海淀政策解读</a>。</p>
+        <h3>4.2 西城</h3>
+        <p><strong>本区京籍小学六年级应届毕业生</strong>按本区程序升学。对于外区或外省市小学毕业生，2026 年回区通知区分两种情形：</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">小学学籍位置</th><th scope="col">通知明确要求的主要材料</th><th scope="col">不能据此作出的推断</th></tr></thead>
+            <tbody>
+              <tr><td>北京市其他区</td><td>父母独立拥有西城产权房的权属证书；孩子和父母至少一方的西城个人居民户籍户口簿；亲子关系凭证、学生卡等；并按原区要求办理出区手续。</td><td>不能认为只买房、不满足孩子及家长户籍要求即可回区；也不能仅凭西城户口忽略产权要求。</td></tr>
+              <tr><td>外省市</td><td>孩子和父母至少一方的西城户籍；西城实际居住材料；亲子关系凭证；就读小学开具的六年级应届毕业生学籍情况说明等。集体户籍另有材料要求。</td><td>不能直接照搬北京市内跨区的材料清单；需按本人实际类别审核。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>审核通过后，按户籍所在地划分学区。通知要求学生户籍所在地和居住地详细地址应为西城区；办理回区手续应慎重，一经办理不予撤销。</p>
+        <div class="notice"><strong>2026 年新增房产记录规则：</strong>自 2026 年 5 月起，用于转学及回区初中入学登记的房产地址，原则上自使用年份至该学生初中毕业年份止，不再提供转学及回区初中入学学位；西城户籍学生自外省申请转入以及符合国家生育政策的情况除外。它不能被简单概括为“所有房产一律三年一学位”，也不能与幼升小的六年学位记录混用。</div>
+        <p class="source">依据：<a href="#s5">[S5] 西城入学实施意见</a>、<a href="#s7">[S7] 西城回区报名通知</a>。</p>
+        <h3>4.3 东城</h3>
+        <p>2026 年政策明确，回东城升初中的小学毕业生须有<strong>东城区户籍及法定监护人持有的东城区房屋产权证</strong>，并在规定时间办理审核、登记。</p>
+        <p>本市户籍小学毕业生通过一般初中（优先发展初中）登记、全区派位和学区服务片派位等安排入学；继续做好九年一贯直升及定向名额派位。<strong>有东城房产但没有东城户籍，不能直接套用海淀的回区条件。</strong></p>
+        <p class="source">依据：<a href="#s9">[S9] 东城 2026 年入学实施细则</a>。</p>
+        <h3>4.4 朝阳</h3>
+        <ul>
+          <li><strong>区级资格：</strong>朝阳区小学的京籍毕业年级学生，或已经办理回朝阳升初中手续的外区、外省市京籍小学毕业年级学生，可按规定入学。</li>
+          <li><strong>具体学校资格：</strong>还需结合户籍、实际居住地址、校区服务范围及当年计划；“有区内资格”不意味着所有校区都可报名。</li>
+          <li><strong>入学方式：</strong>全区公办校登记派位、单校划片、多校划片、九年一贯对口接收，以及按规定的公办寄宿、民办等。</li>
+          <li><strong>房产时间限制：</strong>政策规定，2017 年 6 月 30 日后取得不动产权证书的相应实际居住地址不再对应一所学校，依据该地址登记入学实行统筹派位。</li>
+          <li><strong>地址记录：</strong>原则上小学六年、初中三年内只提供相应服务范围的一个入学学位，符合国家生育政策的情况除外。</li>
+        </ul>
+        <p class="source">依据：<a href="#s11">[S11] 朝阳 2026 年入学意见</a>。外区、外省市回朝阳的个案材料须进一步对照专门办理通知，不将幼升小租房条件直接当作小升初回区规则。</p>
+        <h3>4.5 材料准备框架</h3>
+        <p>常见材料包括孩子和父母的户口簿、法定监护人房产权属或实际居住证明、出生医学证明、教育 ID 或学籍证明，以及与家庭情况相关的婚姻、抚养法律材料。<strong>这不是可直接提交的统一清单</strong>，应逐区核对原件、格式、时间点及例外要求。</p>
+        <p class="note">隐私原则：公开仓库只讨论政策与匿名的一般情形。不要提交孩子姓名、证件、户口簿照片、验证码、精确家庭住址、个人预算或能关联到具体孩子的学籍信息。家庭资格核验和办理状态请记录在私人副本中；Git 历史可能保留已删除内容。</p>
+      </section>
+
+      <section id="pathways">
+        <h2><small>05 / PRIMARY-TO-SECONDARY PATHWAYS</small>从目标初中倒推小学</h2>
+        <h3>5.1 四类路径，不要统称“对口”</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">路径</th><th scope="col">含义</th><th scope="col">规划时必须确认</th></tr></thead>
+            <tbody>
+              <tr><td>九年一贯 / 明确直升</td><td>符合政策的本校或指定小学毕业生按规定直升。</td><td>适用届别、校区、学生条件；是否因转学或放弃等改变资格。</td></tr>
+              <tr><td>按比例对口直升</td><td>按批准比例或计划安排；超额时按规则派位。</td><td>比例、名额、适用年级及是否需要主动申请。</td></tr>
+              <tr><td>定向名额派位</td><td>某小学毕业生获得面向一所或多所初中的特定派位机会。</td><td>不是人人录取；看可报范围和实际名额。</td></tr>
+              <tr><td>多校划片 / 学区派位</td><td>在规定学校集合内按志愿和规则安排。</td><td>完整学校组合，不能只看最理想学校。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>5.2 东城的具体例子</h3>
+        <p>根据北京日报报道的 2026 年东城入学改革安排，下列项目列入九年一贯小升初直升项目：</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">小学</th><th scope="col">公布的初中去向</th><th scope="col">规划边界</th></tr></thead>
+            <tbody>
+              <tr><td>青年湖小学</td><td>171 中学</td><td rowspan="4">这些是 2026 年公布的安排，不保证未来六年不变。先核实能否进入对应小学，再核实孩子这一届的升学条件。</td></tr>
+              <tr><td>方家小学</td><td>五中分校</td></tr>
+              <tr><td>史家实验学校</td><td>二中分校北校区</td></tr>
+              <tr><td>文汇小学</td><td>文汇中学</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>相比之下，新鲜小学到二中分校、东四十四条小学到五中分校，在公布安排中属于<strong>定向名额派位项目</strong>，不能称作全员直升。</p>
+        <p>2026 年新增的金台书院小学到文汇中学南校区，也有明确届别差异：2026 年 9 月 1 日起入学的新一年级毕业时全部直升；公布时在校的一至六年级学生可选择直升或电脑派位。这个例子说明，<strong>政策名称相同，不同入学届别的选择权也可能不同</strong>。</p>
+        <p class="source">依据：<a href="#s10">[S10] 北京日报：东城 2026 年义务教育阶段入学改革任务安排</a>（权威媒体来源）。</p>
+        <h3>5.3 选择小学时的“五个核对”</h3>
+        <ol>
+          <li>家庭凭什么进入这所小学：户籍、产权、实际居住和多校划片条件是否满足？</li>
+          <li>孩子所属入学届别，适用哪一种小升初路径？</li>
+          <li>如果不是全员直升，剩余学生会进入哪些学校组合？</li>
+          <li>小学与所有可能初中的实际校区，通勤是否均可接受？</li>
+          <li>如果目标初中未录取，家庭是否仍愿意承担住房、迁居和机会成本？</li>
+        </ol>
+      </section>
+
+      <section id="risks">
+        <h2><small>06 / RISKS &amp; TRANSITIONS</small>风险清单与中招衔接</h2>
+        <h3>6.1 录取顺序是真正的决策约束</h3>
+        <p><strong>海淀：</strong>2026 年公办初中登记、按比例对口直升、公办寄宿和民办相关志愿可按规定混合填报 1—10 个。官方解读说明按志愿顺序录取，超额时随机；录取后结果锁定。不能把不愿意接受的学校随意放进志愿。民办结果另有规定的确认要求。<a href="#s4">[S4]</a></p>
+        <p><strong>西城：</strong>2026 年相关录取顺序是全区派位 → 特色 / 寄宿 / 民办 → 对口直升派位 → 学区登记 → 学区派位。前一种方式录取后，后续意向失效；学区派位须按规定填满。已有满意直升机会的家庭，也应评估在前序志愿被录取的影响。<a href="#s8">[S8]</a></p>
+        <h3>6.2 “民办”“寄宿”不是自由跨区的同义词</h3>
+        <p>民办学校须按获批范围、计划和当年程序招生。海淀 2026 年确有外区学生申请海淀民办学校的专门流程，但不能据此推断所有民办校均面向全市。公办寄宿也须看招生范围及是否适合孩子住校，不能当作免资格的入口。<a href="#s4">[S4]</a></p>
+        <h3>6.3 不把传闻当作可兑现的通道</h3>
+        <p>市教委 2026 年政策明确禁止以考试、竞赛证书、面试、评测、接收简历等方式选拔学生，并禁止相关形式的提前招生。对“点招”“机构保证”“付费获得信息差”等说法，不作入学方案或预算依据。<a href="#s1">[S1]</a></p>
+        <h3>6.4 初中阶段还需考虑未来高中录取</h3>
+        <p>北京教育考试院 2026 年问答规定：具有普通高中升学资格、同一学校连续三年学籍的应届初中毕业生，才可按条件参加指标分配招生（市级统筹、校额到校）；当年还要求录取总分达到 430 分、综合素质评价达到 B 等。录取结合名额、成绩及志愿，并非达到门槛就保证进入优质高中。<a href="#s12">[S12]</a></p>
+        <div class="notice"><strong>两件事必须分开：</strong>小升初时办理回区，与中考时回户籍地报考不是同一流程。初中途中转学、中考跨区报考可能影响指标分配资格。上述 430 分等是 2026 年中招要求，不是对孩子未来毕业年度的预测。</div>
+        <h3>6.5 购房、迁户与学校质量的常见误判</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">误判</th><th scope="col">应采取的核验动作</th></tr></thead>
+            <tbody>
+              <tr><td>“买在学校旁边就能上”</td><td>查购房或取证日期限制、学位使用记录、实际居住要求、多校划片及当年服务范围。</td></tr>
+              <tr><td>“集团里都一样”</td><td>记录完整校名、校区、实际地址；核实教师和管理安排，不用本校数据替代分校数据。</td></tr>
+              <tr><td>“名额多，中签率就高”</td><td>没有报名和志愿数据不计算概率；为未中签保留可接受方案。</td></tr>
+              <tr><td>“高考成绩强，初中一定强”</td><td>只比较初中普通学生的教学支持、校风、作业负担和同口径毕业表现；不跨学段替代。</td></tr>
+              <tr><td>“先进区，以后随时转校”</td><td>查转学年级窗口、学位供给、回区不可撤销规定和连续学籍影响。</td></tr>
+              <tr><td>“先录进去，再放弃换一所”</td><td>先读录取锁定与确认规则；不要用真实录取试错。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="roadmap">
+        <h2><small>07 / ACTION ROADMAP</small>行动路线图</h2>
+        <h3>7.1 四个阶段</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">阶段</th><th scope="col">核心工作</th><th scope="col">形成的成果</th></tr></thead>
+            <tbody>
+              <tr><td>现在：家庭条件核验</td><td>确认年级、学籍区、孩子和父母户籍区、房产及实际居住；向区考试中心核实不明确的个案。</td><td>资格清单；明确“满足 / 不满足 / 待核实”。</td></tr>
+              <tr><td>下一步：两条可行路径</td><td>优先比较现有小学正常升学与一种合法可行的回区或小学衔接方案。</td><td>每条路径的完整初中组合和最坏可接受结果。</td></tr>
+              <tr><td>目标年度政策发布后</td><td>更新回区条件、招生计划、学区名单、实际校区与办理窗口，不机械沿用旧数据。</td><td>带证据的志愿草案和材料日程。</td></tr>
+              <tr><td>提交与录取阶段</td><td>夫妻复核志愿顺序；按时完成审核、确认；保存提交回执和版本记录。</td><td>正式提交记录与确定的入学安排。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>7.2 2026 年窗口示例：只用于理解节奏</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">事项</th><th scope="col">2026 年日期</th><th scope="col">来源</th></tr></thead>
+            <tbody>
+              <tr><td>西城回区网上申报</td><td>5 月 5 日 9:00—5 月 9 日 17:00</td><td><a href="#s7">S7</a></td></tr>
+              <tr><td>海淀回区相关信息采集</td><td>5 月 6 日 9:00—5 月 9 日 17:00</td><td><a href="#s4">S4</a></td></tr>
+              <tr><td>西城本区及回区学生意向填报</td><td>5 月 19 日 9:00—5 月 21 日 17:00</td><td><a href="#s8">S8</a></td></tr>
+              <tr><td>海淀登记、直升、寄宿、民办相关志愿</td><td>5 月 26 日 9:00—5 月 29 日 13:00</td><td><a href="#s4">S4</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="notice"><strong>这些日期已经过去，不是 2027 年的截止日期。</strong>它们说明回区和填报窗口可能只有数天。若目标为 2027 年，应在新政策发布后替换本表；若孩子尚未上小学，更不能把这些时间或当前直升安排直接当作六年后的保证。</p>
+        <h3>7.3 向考试中心咨询时的建议提纲</h3>
+        <ul class="checklist">
+          <li>我们的学籍、孩子及父母户籍、产权和实际居住情况，适用哪条资格规则？</li>
+          <li>审核通过后划入哪个学区，能参加哪些入学方式，是否存在统筹安排？</li>
+          <li>房产学位是否被占用，如何通过官方渠道核验，例外如何适用？</li>
+          <li>材料取得日期、格式、申报窗口和原区转出手续分别有什么要求？</li>
+          <li>回区或转学办理后能否撤销，对直升和未来学籍资格有何影响？</li>
+        </ul>
+        <p class="source">2026 西城回区通知列示政策咨询电话为 <a href="tel:01066007070">010-66007070</a>。其他区联系方式应从目标年度考试中心或入学平台核对，不沿用未核实的第三方号码。</p>
+      </section>
+
+      <section id="workspace">
+        <h2><small>08 / PUBLIC COLLABORATION</small>公开协作与家庭决策模板</h2>
+        <div class="notice"><strong>公开协作边界：</strong>任何人都可阅读网页和仓库；登录 GitHub 后可提交 Issue，或通过 Fork / Pull Request 提议修改。公开不等于所有人可直接覆盖主稿，修改由有权限的维护者审核合并。GitHub Pages 不是实时共同打字的编辑器。下方家庭表格只提供空白模板，个人内容请下载后在私人副本中填写，勿提交到公开仓库。</div>
+        <h3>8.1 建议的共同写作规则</h3>
+        <ol>
+          <li><strong>确定唯一主文档。</strong>仓库 main 分支的 index.html 是公开主稿；通过 Pull Request 合并研究修订，网页发布已合并版本。</li>
+          <li><strong>事实必须有来源。</strong>补充政策时写明区、学段、年份与链接；家长经验单独标注。</li>
+          <li><strong>分歧先讨论。</strong>对公开研究结论的分歧在 Issue 或 Pull Request 中提供理由与证据；个人学校选择和预算分歧留在私人讨论中。</li>
+          <li><strong>家庭决定不公开。</strong>迁户、签约、转学和正式志愿提交前，由家庭双方确认；这些记录不是公开贡献内容。</li>
+          <li><strong>保持版本记录。</strong>每次政策更新，写明日期、原因和受影响结论，保留提交与审核历史。</li>
+        </ol>
+        <h3>8.2 家庭约束表（仅在私人副本填写）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">项目</th><th scope="col">共同填写（无需证件号码）</th><th scope="col">状态</th></tr></thead>
+            <tbody>
+              <tr><td>孩子当前年级 / 目标入学年</td><td class="placeholder">待填写</td><td>待核实</td></tr>
+              <tr><td>当前小学与学籍区</td><td class="placeholder">待填写</td><td>待核实</td></tr>
+              <tr><td>孩子、父母的户籍区与户籍类型</td><td class="placeholder">只记录区和类型，不粘贴户口簿</td><td>待核实</td></tr>
+              <tr><td>房产与实际居住条件</td><td class="placeholder">记录区、产权关系和关键日期，不填精确门牌</td><td>待核实</td></tr>
+              <tr><td>通勤上限 / 是否接受寄宿</td><td class="placeholder">由双方协商，不预设阈值</td><td>待讨论</td></tr>
+              <tr><td>是否考虑搬家 / 预算边界</td><td class="placeholder">只在私人副本中填写，不公开提交</td><td>待讨论</td></tr>
+              <tr><td>孩子的学习支持与生活需要</td><td class="placeholder">自主性、作业支持、兴趣、情绪与作息等</td><td>待讨论</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>8.3 可行路径与学校对比表（私人决策模板）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">方案</th><th scope="col">资格与证据</th><th scope="col">目标校 / 其他去向</th><th scope="col">实际校区与通勤</th><th scope="col">主要风险 / 待办</th></tr></thead>
+            <tbody>
+              <tr><td>A：现有学籍正常升学</td><td>待填写</td><td>待填写完整组合</td><td>待实测</td><td>待填写</td></tr>
+              <tr><td>B：符合条件的回区方案</td><td>未经审核，不预设可行</td><td>待填写完整组合</td><td>待实测</td><td>回区条件与不可撤销规则</td></tr>
+              <tr><td>C：小学衔接 / 其他合法方案</td><td>按孩子年级决定是否适用</td><td>核对直升、比例或派位</td><td>待实测</td><td>未来年度政策变化</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>8.4 待讨论与待核实事项</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">编号</th><th scope="col">议题</th><th scope="col">负责人</th><th scope="col">需要的证据 / 行动</th><th scope="col">结论</th></tr></thead>
+            <tbody>
+              <tr><td>Q01</td><td>哪些区真实具备申请资格？</td><td>待分工</td><td>按家庭条件咨询区考试中心</td><td>待核实</td></tr>
+              <tr><td>Q02</td><td>我们是否愿意承担派位未中的结果？</td><td>共同</td><td>列出完整初中组合逐一讨论</td><td>待讨论</td></tr>
+              <tr><td>Q03</td><td>候选学校普通学生获得什么支持？</td><td>待分工</td><td>开放日、学校公开资料、同校区在读家庭访谈</td><td>待调查</td></tr>
+              <tr><td>Q04</td><td>实际校区是否变化，通勤是否可接受？</td><td>待分工</td><td>官方计划、学校确认、工作日实测</td><td>待调查</td></tr>
+              <tr><td>Q05</td><td>哪些成本不可逆？</td><td>共同</td><td>住房、搬迁、学籍、时间和家庭安排</td><td>待讨论</td></tr>
+              <tr><td>Q06</td><td>目标年度政策与本稿有哪些变化？</td><td>待分工</td><td>新年度官方文件逐项比对</td><td>等待发布 / 更新</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>8.5 证据记录与决策日志（私人决策模板）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">日期 / 提出人</th><th scope="col">新增事实或观点</th><th scope="col">来源及适用年份</th><th scope="col">影响哪项决策</th><th scope="col">双方确认</th></tr></thead>
+            <tbody>
+              <tr><td class="placeholder">待填写</td><td>区分政策事实、亲历经验和个人偏好</td><td>粘贴公开链接，不含身份材料</td><td>待填写</td><td>未确认</td></tr>
+              <tr><td class="placeholder">待填写</td><td class="placeholder">待填写</td><td class="placeholder">待填写</td><td class="placeholder">待填写</td><td>未确认</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>8.6 在 GitHub 上参与共同写作</h3>
+        <ol>
+          <li><strong>讨论或补充资料：</strong>进入 <a href="https://github.com/YanaYuan/beijing-school-whitepaper/issues/new/choose">Issue 入口</a>，说明问题、区、学段、适用年份、具体校区和公开来源。不会编辑 HTML 也可以参与。</li>
+          <li><strong>直接提议修改：</strong>点击顶部“参与修改”，登录 GitHub，在 HTML 中修改相应正文；没有写权限时，按 GitHub 提示 Fork 或创建自己的分支，再提交 Pull Request。</li>
+          <li><strong>审核与合并：</strong>维护者检查政策年份、证据、表述及隐私，再合并到 main。需要长期直接写权限的协作者，应由仓库所有者单独邀请；无需为了参与讨论给所有人写权限。</li>
+          <li><strong>查看发布版本：</strong>GitHub Pages 在合并并部署成功后更新。可在 <a href="https://github.com/YanaYuan/beijing-school-whitepaper/commits/main/">提交历史</a>查看变更，在 <a href="https://github.com/YanaYuan/beijing-school-whitepaper/pulls">Pull Request 列表</a>查看正在讨论的修订。</li>
+        </ol>
+        <p class="source">仓库：<a href="https://github.com/YanaYuan/beijing-school-whitepaper">YanaYuan / beijing-school-whitepaper</a>。公开发布仅包含公开资料的研究整理与空白模板，不包含任何家庭的真实身份材料。</p>
+      </section>
+
+      <section id="references">
+        <h2><small>09 / SOURCES &amp; VERSION HISTORY</small>来源与版本记录</h2>
+        <p>以下来源均在本轮研究中核对。政策与人数的适用年度为 2026 年，核验日期为 2026-10-25；网页内容今后可能调整。图片形式的官方计划表也已直接查看，不以搜索摘要代替原表。</p>
+        <ol class="sources">
+          <li id="s1"><strong>S1 · 北京市教委：2026 年义务教育入学政策解读 <span class="tag">A</span></strong><a href="https://jw.beijing.gov.cn/xxgk/2024zcjd/202604/t20260417_4589112.html">官方原文</a><span class="date">2026-04-17；用于市级回区流程及招生纪律。</span></li>
+          <li id="s2"><strong>S2 · 海淀区：2026 年义务教育入学实施意见 <span class="tag">A</span></strong><a href="https://www.bjhdedu.cn/zxfw/szx/tzgg/202604/t20260428_91400.html">官方原文</a><span class="date">2026-04-28；用于海淀初中资格、方式、户籍房产与统筹规则。</span></li>
+          <li id="s3"><strong>S3 · 海淀区：2026 年公办初中登记入学派位计划表 <span class="tag">A</span></strong><a href="https://www.bjhdedu.cn/gongkai/tzgg/202605/t20260525_92589.html">官方公告及计划表</a> · <a href="https://www.bjhdedu.cn/gongkai/tzgg/202605/W020260525787803666943.png">官方计划原图</a><span class="date">2026-05-25；用于逐校计划、招生区域及借址办学提示。</span></li>
+          <li id="s4"><strong>S4 · 海淀区：2026 年入学政策解读 <span class="tag">A</span></strong><a href="https://www.bjhdedu.cn/zxfw/szx/tzgg/202604/t20260428_91398.html">官方原文（第三部分为初中）</a><span class="date">2026-04-28；用于回区采集时间、1—10 志愿、录取锁定、民办外区报名等。</span></li>
+          <li id="s5"><strong>S5 · 西城区：2026 年义务教育入学实施意见 <span class="tag">A</span></strong><a href="https://www.bjxch.gov.cn/xxgk/xxxqzcwj/pnidpv997472.html">区政府原文</a> · <a href="https://yjrx.bjedu.cn/portal_xc/zszc/xc_26_1.html">北京市入学平台版本</a><span class="date">2026 年度政策；用于西城区内学籍与入学方式。</span></li>
+          <li id="s6"><strong>S6 · 西城区：2026 年全区派位、学区登记计划 <span class="tag">A</span></strong><a href="https://xckszx.cn/xckszx/news/policy/detail?id=97&amp;newsId=2933">考试中心公告</a> · <a href="https://www.xckszx.cn/api/static/file/image/20260513/1778636371530031602.jpg">官方计划原图</a><span class="date">2026-05-13；用于三帆、实验分校、十三中分校、四中、八中名额及校区安排。</span></li>
+          <li id="s7"><strong>S7 · 西城区：2026 年外区、外省市回区报名通知 <span class="tag">A</span></strong><a href="https://xckszx.cn/xckszx/news/policy/detail?id=97&amp;newsId=2895">考试中心原文</a><span class="date">2026-04-28；用于材料、时间、学区划分、不可撤销与房产地址记录规则。</span></li>
+          <li id="s8"><strong>S8 · 西城区：2026 年初中入学意向填报通知 <span class="tag">A</span></strong><a href="https://xckszx.cn/xckszx/news/policy/detail?id=97&amp;newsId=2941">考试中心原文</a><span class="date">2026-05-13；用于填报窗口、录取顺序、确认与不可撤销规则。</span></li>
+          <li id="s9"><strong>S9 · 东城区：2026 年义务教育入学实施细则 <span class="tag">A</span></strong><a href="https://www.bjdch.gov.cn/zwgk/zcwj2024/202604/t20260428_4620458.html">区政府原文</a><span class="date">2026-04-28；用于回区户籍房产条件和初中入学方式。</span></li>
+          <li id="s10"><strong>S10 · 北京日报：东城 2026 年义务教育入学改革任务安排 <span class="tag">B</span></strong><a href="https://news.bjd.com.cn/2026/07/02/11839862.shtml">报道原文</a><span class="date">2026-07-02；用于直升、定向名额、校区与适用届别实例。</span></li>
+          <li id="s11"><strong>S11 · 朝阳区：2026 年义务教育入学意见 <span class="tag">A</span></strong><a href="https://www.beijing.gov.cn/zhengce/zhengcefagui/202604/t20260430_4625423.html">首都之窗政策原文</a><span class="date">文件落款 2026-04-28，门户发布 2026-04-30；用于初中资格、划片和地址记录规则。</span></li>
+          <li id="s12"><strong>S12 · 北京教育考试院：2026 年中招指标分配问答 <span class="tag">A</span></strong><a href="https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202607/t20260709_4754114.html">首都之窗原文</a><span class="date">2026-07-09；用于连续学籍、报考门槛与指标分配录取机制，仅适用于当年。</span></li>
+          <li id="s13"><strong>S13 · 北京市义务教育入学服务平台 <span class="tag">A</span></strong><a href="https://yjrx.bjedu.cn/">官方平台入口</a><span class="date">查询目标年度政策与办理入口；开放时间以官方公告为准。</span></li>
+        </ol>
+        <h3>版本记录</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">版本 / 日期</th><th scope="col">变更</th><th scope="col">仍待完成的家庭工作</th></tr></thead>
+            <tbody>
+              <tr><td>v1.0 / 2026-10-25</td><td>将首轮研究整理为 HTML 白皮书，加入证据分级、官方名额、资格差异、风险、家庭决策模板与 GitHub 公开协作入口。</td><td>在私人副本中核验家庭条件；逐校考察；通过 Issue / Pull Request 补充公开证据；按新年度政策更新。</td></tr>
+              <tr><td class="placeholder">下一版本</td><td class="placeholder">填写修改原因与对应来源</td><td class="placeholder">填写已确认与仍存分歧的事项</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <footer>
+        <strong>最终原则：</strong>先确认真实可行的入学路径，再比较完整学校组合，最后决定是否付出住房与迁居成本。<br>
+        本稿由 AI 辅助整理公开资料，供家庭研究与共同写作使用。不得将候选清单、历史名额或家长经验转述为官方录取保证。
+      </footer>
+    </article>
+  </div>
+  <script>
+    "use strict";
+    document.getElementById("print-report").addEventListener("click", () => window.print());
+  </script>
+</body>
+</html>
